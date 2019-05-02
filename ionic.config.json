@@ -1,5 +1,7 @@
 {
   "name": "pruebaNavegadores",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

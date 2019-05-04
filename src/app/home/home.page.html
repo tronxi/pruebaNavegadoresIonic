@@ -9,4 +9,23 @@
 <ion-content>
   {{this.deviceService.cordovaAvailable()}}
   <ion-button (click)="abrir()">Abrir</ion-button>
+  <ion-button (click)="copiar()">Copiar</ion-button>
+  <form [formGroup]="formGroup">
+    <ion-list>
+      <ion-item>
+          <ion-label for="name">Name</ion-label>
+          <ion-input name="name"
+                     formControlName="name"
+                     type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label for="email">E-mail</ion-label>
+          <ion-input name="email"
+                     formControlName="email"
+                     type="text"></ion-input>
+          <ion-button (click)="pegar()">Pegar</ion-button>
+        </ion-item>
+    </ion-list>
+  </form>
+
 </ion-content>
